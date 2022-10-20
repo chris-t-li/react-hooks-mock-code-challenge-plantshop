@@ -41,6 +41,12 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Birds of Paradise",
+      "image": "https://assets.weimgs.com/weimgs/rk/images/wcm/products/202238/0059/faux-potted-bird-of-paradise-plant-c.jpg",
+      "price": 35,
+      "id": 8
     }
   ]
 }
