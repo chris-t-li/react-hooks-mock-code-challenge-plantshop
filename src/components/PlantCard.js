@@ -1,10 +1,20 @@
 import React, { useState } from "react";
 
-function PlantCard({ plant }) {
+function PlantCard({ plant, editPlant, selectEditPlant, deletePlant }) {
   const [isInStock, setIsInStock] = useState(true);
+  const [isEditMode, setIsEditMode] = useState(false);
 
   function handleClick() {
     setIsInStock(!isInStock);
+  }
+  function handleEditClick() {
+    //console.log(plant)
+    editPlant(plant);
+    setIsEditMode(!isEditMode);
+  }
+
+  function handleDelete() {
+    deletePlant(plant);
   }
 
   return (
@@ -17,6 +27,12 @@ function PlantCard({ plant }) {
       ) : (
         <button onClick={handleClick}>Out of Stock</button>
       )}
+
+      {selectEditPlant.id === plant.id ?
+        <button onClick={handleEditClick}>{isEditMode ? "Cancel" : "Edit"}</button>
+        : <button onClick={handleEditClick}>Edit</button>
+      }
+      <button onClick={handleDelete}>Delete</button>
     </li>
   );
 }

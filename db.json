@@ -40,13 +40,19 @@
       "id": 7,
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
-      "price": 55
+      "price": "55"
     },
     {
       "name": "Birds of Paradise",
       "image": "https://assets.weimgs.com/weimgs/rk/images/wcm/products/202238/0059/faux-potted-bird-of-paradise-plant-c.jpg",
-      "price": 35,
+      "price": 200,
       "id": 8
+    },
+    {
+      "name": "Snake Plant",
+      "image": "https://www.ikea.com/us/en/images/products/sansevieria-trifasciata-potted-plant-mother-in-laws-tongue__0908898_pe676659_s5.jpg",
+      "price": 20,
+      "id": 9
     }
   ]
 }
